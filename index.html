@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html, CSS, Traning </title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <img src="" alt="">
-        <h1 id="title"> Marritage Status Survey Form</h1>
+        <h1 id="title"> Personal Survey Form</h1>
         <p id="description">This is a survey to check HTML and CSS concepts</p>
     </header>
-    <form id="survey-form">
+    <section>
+    <form class="form-container">
         <div>
             <label id="name-label" for="name"> Enter your name: </label>
             <input type="text" name="name" placeholder="Enter your name" required>
         </div>
+        <hr>
         <div>
             <label id="email-label" for="email"> Enter your email: </label>
             <input type="text" name="email" placeholder="Enter your email" required>
@@ -28,29 +31,39 @@
             <input name="petnumber" type="number" placeholder="Enter the number of pets" min="1" max="10">
         </div>
         <div>
-            <label for="options">Choose your gender status: </label>
-            <select name="options">
-                <option value="">Single</option>
-                <option value="">Married</option>
-                <option value="">Divorced</option>
+            <label for="options">Choose your marritage status: </label>
+            <select id="options">
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
             </select>
         </div>
-        <div>
+        <div class="multiple-selector">
+            <p>Choose your gender: </p>
             <label for="male">Male </label>
-            <input type="radio" name="genders" id="male">
-            <label for="male">Female </label>
-            <input type="radio" name="genders" id="female">
+            <input type="radio" name="genders" id="male" value="male">
+            <label for="female">Female </label>
+            <input type="radio" name="genders" id="female" value="female">
         </div>
 
+        <div class="multiple-selector">
+            <p>Choose your favorite sports: </p>
+            <label for="soccer">Soccer </label>
+            <input type="checkbox" name="genders" id="soccer" value="soccer">
+            <label for="basket">Basket </label>
+            <input type="checkbox" name="genders" id="basket" value="basket">
+            <label for="tennis">Tennis </label>
+            <input type="checkbox" name="genders" id="tennis" value="tennis">
+            <label for="volleyball">Volleyball </label>
+            <input type="checkbox" name="genders" id="Volleyball" value="volleyball">
         </div>
         <div>
-            <label for="male">Male </label>
-            <input type="checkbox" name="genders" id="male">
-            <label for="male">Female </label>
-            <input type="checkbox" name="genders" id="female">
-        </div>
-
+            <label for="comments">Comments: </label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments"></textarea>
+        <button class="cool-button">Submit</button>
     </form>
+    </section>
+
 
 
 </body>
