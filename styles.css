@@ -13,11 +13,12 @@ html,body {
     align-items: center;
     background-image: url('assets/surface-Fpk57p6Waxc-unsplash.jpg');
     background-size: cover; 
+  font-family: 'Poppins', sans-serif;
     
 }
 header {
-   font-family: sans-serif;
    color: white;
+   text-align: center;
 }
 
 
@@ -42,37 +43,39 @@ form div {
     width: 100%;
     height: 50%;
     border-bottom: 1px solid black;
+    gap: 10px;
 }
 
-footer {
- 
-  bottom: 0;
-  width: 100%;
-  background-color: #f5f5f5;
-  padding: 10px;
-  text-align: center;
-  margin-top: 10px;
-}
-
-
-input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+select {
     width: 80%;
-    font-size: 16px;
-    outline: none;
+    height: 100%;
+    font-size:20px;
+    border-radius: 5px;
+    outline: 1px solid blue;
 }
 
+textarea{
+    width: 80%;
+    height: 100%;
+    font-size:20px;
+    border-radius: 5px;
+    outline: 1px solid blue;
+}
+
+label,p {
+    font-size: 20px;
+    font-weight: 100;
+    color: black;
+}
 .form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%; 
+    width: 500px; 
     max-width: 900px; 
     margin: 0 auto; 
-    background-color: rgba(255, 255, 255, 0.7); 
+    background-color: rgba(153, 153, 255, 0.8); 
     border-radius: 10px; 
     padding: 20px; 
   }
@@ -98,4 +101,14 @@ input[type="text"] {
   
   .cool-button:hover {
     background-color: #45a049; /* Darker shade of green on hover */
+  }
+
+  .input-style{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 20px;
+    outline: 1px solid blue;
+
   }

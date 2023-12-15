@@ -18,21 +18,21 @@
     <form class="form-container">
         <div>
             <label id="name-label" for="name"> Enter your name: </label>
-            <input type="text" name="name" placeholder="Enter your name" required>
+            <input class="input-style" type="text" id="name" name="name" placeholder="Enter your name" required>
         </div>
         <hr>
         <div>
             <label id="email-label" for="email"> Enter your email: </label>
-            <input type="text" name="email" placeholder="Enter your email" required>
+            <input class="input-style" type="email" id="email" name="email" placeholder="Enter your email" required>
         </div>
 
         <div>
             <label id="petnumber-label" for="petnumber"> Enter the number of children: </label>
-            <input name="petnumber" type="number" placeholder="Enter the number of pets" min="1" max="10">
+            <input class="input-style" type="number" id="email" name="petnumber"  placeholder="Enter the number of pets" min="1" max="10">
         </div>
         <div>
             <label for="options">Choose your marritage status: </label>
-            <select id="options">
+            <select id="options" name = "selected_option">
                 <option value="single">Single</option>
                 <option value="married">Married</option>
                 <option value="divorced">Divorced</option>
@@ -41,25 +41,25 @@
         <div class="multiple-selector">
             <p>Choose your gender: </p>
             <label for="male">Male </label>
-            <input type="radio" name="genders" id="male" value="male">
+            <input type="radio" name="gender" id="male" value="male">
             <label for="female">Female </label>
-            <input type="radio" name="genders" id="female" value="female">
+            <input type="radio" name="gender" id="female" value="female">
         </div>
 
         <div class="multiple-selector">
             <p>Choose your favorite sports: </p>
             <label for="soccer">Soccer </label>
-            <input type="checkbox" name="genders" id="soccer" value="soccer">
+            <input type="checkbox" name="sport" id="soccer" value="soccer">
             <label for="basket">Basket </label>
-            <input type="checkbox" name="genders" id="basket" value="basket">
+            <input type="checkbox" name="sport" id="basket" value="basket">
             <label for="tennis">Tennis </label>
-            <input type="checkbox" name="genders" id="tennis" value="tennis">
+            <input type="checkbox" name="sport" id="tennis" value="tennis">
             <label for="volleyball">Volleyball </label>
-            <input type="checkbox" name="genders" id="Volleyball" value="volleyball">
+            <input type="checkbox" name="sport" id="Volleyball" value="volleyball">
         </div>
         <div>
             <label for="comments">Comments: </label>
-            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments"></textarea>
+            <textarea name="comments" id="comments" placeholder="Enter your comments"></textarea>
         <button class="cool-button">Submit</button>
     </form>
     </section>
